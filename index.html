@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AuditLayer | Audit evidence for AI actions in healthcare RCM</title>
+    <meta
+      name="description"
+      content="AuditLayer converts AI-driven healthcare RCM activity into structured evidence artifacts mapped to HIPAA, SOC 2, and EU AI Act controls."
+    />
+    <meta property="og:title" content="AuditLayer" />
+    <meta
+      property="og:description"
+      content="Audit evidence and control mapping for AI actions in healthcare RCM workflows."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#main" aria-label="AuditLayer home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M8 7h16l8 8v18H8V7Z" />
+          <path d="M24 7v8h8" />
+          <path d="M14 21h12" />
+          <path d="M14 27h8" />
+        </svg>
+        <span>AuditLayer</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#output">Output</a>
+        <a href="#rcm">RCM focus</a>
+        <a href="#design-partners">Design partners</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Healthcare RCM audit evidence</p>
+          <h1 id="hero-title">Audit evidence for AI actions in healthcare RCM.</h1>
+          <p class="lede">
+            AuditLayer converts AI-driven healthcare RCM activity into structured evidence artifacts mapped to HIPAA,
+            SOC 2, and EU AI Act controls.
+          </p>
+          <div class="cta-row">
+            <a
+              class="button button-primary"
+              href="mailto:kevin@getauditlayer.com?subject=AuditLayer%20sample%20audit%20pack&body=Kevin%2C%0A%0AI%27d%20like%20to%20review%20a%20sample%20AuditLayer%20audit%20pack.%0A"
+            >
+              Review a sample audit pack
+            </a>
+            <a class="button button-secondary" href="mailto:kevin@getauditlayer.com">Email Kevin</a>
+          </div>
+        </div>
+
+        <aside class="artifact-card" aria-label="Sample evidence artifact preview">
+          <div class="artifact-header">
+            <span class="artifact-dot"></span>
+            <span>Evidence artifact</span>
+          </div>
+          <dl class="artifact-list">
+            <div>
+              <dt>Workflow</dt>
+              <dd>Denial appeal review</dd>
+            </div>
+            <div>
+              <dt>Data touched</dt>
+              <dd>Claim, encounter, payer policy</dd>
+            </div>
+            <div>
+              <dt>Control mapping</dt>
+              <dd>HIPAA, SOC 2, EU AI Act</dd>
+            </div>
+            <div>
+              <dt>Auditor narrative</dt>
+              <dd>Generated for review</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="problem" aria-labelledby="problem-title">
+        <div class="section-kicker">Why this matters</div>
+        <h2 id="problem-title">Compliance teams need more than logs.</h2>
+        <p>
+          Healthcare teams are starting to use AI workflows for coding, prior authorization, denial appeals, and QA.
+          Compliance teams still need a clear auditor narrative: what happened, why it happened, what data was touched,
+          and which control it supports.
+        </p>
+        <p>AuditLayer gives them that artifact.</p>
+      </section>
+
+      <section class="output" id="output" aria-labelledby="output-title">
+        <div class="section-heading">
+          <div class="section-kicker">What it produces</div>
+          <h2 id="output-title">From event to evidence artifact.</h2>
+        </div>
+        <div class="output-grid">
+          <article class="wide-card">
+            <p class="card-label">Pipeline</p>
+            <p class="pipeline">event <span>→</span> structure <span>→</span> control mapping <span>→</span> auditor narrative</p>
+          </article>
+          <article>
+            <h3>Timestamped action records</h3>
+            <p>Each AI action becomes a structured record with actor, workflow, tenant, resource, outcome, and time.</p>
+          </article>
+          <article>
+            <h3>Framework mapping</h3>
+            <p>Records are mapped to HIPAA, SOC 2, and EU AI Act controls in language a reviewer can follow.</p>
+          </article>
+          <article>
+            <h3>Audit pack PDF</h3>
+            <p>A reviewable export turns raw activity into a concise evidence artifact for compliance review.</p>
+          </article>
+          <article>
+            <h3>Tenant-level separation</h3>
+            <p>Healthcare RCM teams can show which customer environment generated which action records.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reference" aria-labelledby="reference-title">
+        <div>
+          <div class="section-kicker">Reference implementation</div>
+          <h2 id="reference-title">Built to be inspected.</h2>
+          <p>
+            The current reference implementation includes an ingestion endpoint, JSON evidence schema, healthcare RCM
+            demo data, dashboard summary, evidence drawer, HIPAA audit pack PDF, and public schema repo.
+          </p>
+        </div>
+        <div class="repo-card">
+          <p class="card-label">Public spec</p>
+          <a href="https://github.com/DeuceAllMighty/auditlayer-spec" target="_blank" rel="noreferrer">
+            github.com/DeuceAllMighty/auditlayer-spec
+          </a>
+        </div>
+      </section>
+
+      <section class="rcm" id="rcm" aria-labelledby="rcm-title">
+        <div class="section-heading">
+          <div class="section-kicker">Built for healthcare RCM</div>
+          <h2 id="rcm-title">Initial workflows.</h2>
+        </div>
+        <div class="workflow-list" role="list">
+          <div role="listitem">Autonomous coding</div>
+          <div role="listitem">Prior authorization</div>
+          <div role="listitem">Denial appeals</div>
+          <div role="listitem">Coding QA</div>
+        </div>
+      </section>
+
+      <section class="design-partners" id="design-partners" aria-labelledby="partner-title">
+        <div class="partner-panel">
+          <p class="eyebrow">3 design partner slots</p>
+          <h2 id="partner-title">Review the evidence format before your next customer, SOC 2, or HIPAA review.</h2>
+          <p>
+            The ask is simple: 20 minutes of feedback on whether the sample audit pack matches what your compliance team
+            or auditor would expect.
+          </p>
+          <div class="cta-row">
+            <a
+              class="button button-primary"
+              href="mailto:kevin@getauditlayer.com?subject=AuditLayer%20design%20partner%20review&body=Kevin%2C%0A%0AI%27d%20like%20to%20review%20the%20AuditLayer%20evidence%20format.%0A"
+            >
+              Review a sample audit pack
+            </a>
+            <a class="button button-secondary" href="mailto:kevin@getauditlayer.com">kevin@getauditlayer.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AuditLayer</span>
+      <a href="mailto:kevin@getauditlayer.com">kevin@getauditlayer.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
