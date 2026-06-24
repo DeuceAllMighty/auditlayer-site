@@ -291,6 +291,7 @@ h1 {
 .artifact-card,
 .output-grid article,
 .repo-card,
+.ruaih-panel,
 .partner-panel {
   border: 1px solid color-mix(in oklab, var(--color-border) 88%, transparent);
   background: color-mix(in oklab, var(--color-surface) 94%, transparent);
@@ -353,6 +354,7 @@ h1 {
 .problem,
 .output,
 .reference,
+.ruaih,
 .rcm,
 .design-partners {
   padding-block: clamp(var(--space-12), 7vw, var(--space-20));
@@ -498,6 +500,72 @@ h1 {
   max-width: 17ch;
 }
 
+.ruaih-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.52fr);
+  gap: clamp(var(--space-8), 6vw, var(--space-16));
+  align-items: center;
+  padding: clamp(var(--space-6), 5vw, var(--space-12));
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(135deg, color-mix(in oklab, var(--color-primary-highlight) 70%, transparent), transparent 56%),
+    var(--color-surface);
+}
+
+.ruaih-copy {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.ruaih-copy h2 {
+  margin-top: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.ruaih-copy p {
+  color: var(--color-text-muted);
+}
+
+.ruaih-intro {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.ruaih-copy .cta-row {
+  margin-top: var(--space-2);
+}
+
+.ruaih-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+}
+
+.ruaih-list {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.ruaih-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: color-mix(in oklab, var(--color-surface) 86%, transparent);
+  font-weight: 700;
+}
+
+.ruaih-list li::before {
+  content: '';
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -523,7 +591,8 @@ h1 {
 
   .hero,
   .problem,
-  .reference {
+  .reference,
+  .ruaih-panel {
     grid-template-columns: 1fr;
   }
 
